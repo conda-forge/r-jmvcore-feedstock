@@ -14,14 +14,16 @@ Summary: A framework for creating rich interactive analyses for the jamovi platf
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-jmvcore-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-jmvcore-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-jmvcore-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-jmvcore-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-jmvcore-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-jmvcore-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-jmvcore-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-jmvcore-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-jmvcore-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-jmvcore-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-jmvcore-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-jmvcore-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-jmvcore/badges/version.svg)](https://anaconda.org/conda-forge/r-jmvcore)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-jmvcore/badges/downloads.svg)](https://anaconda.org/conda-forge/r-jmvcore)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--jmvcore-green.svg)](https://anaconda.org/conda-forge/r-jmvcore) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-jmvcore.svg)](https://anaconda.org/conda-forge/r-jmvcore) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-jmvcore.svg)](https://anaconda.org/conda-forge/r-jmvcore) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-jmvcore.svg)](https://anaconda.org/conda-forge/r-jmvcore) |
 
 Installing r-jmvcore
 ====================
