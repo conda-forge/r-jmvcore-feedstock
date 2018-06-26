@@ -1,5 +1,4 @@
-{% set version = '0.8.5' %}
-
+{% set version = '0.9.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +9,12 @@ package:
 source:
   fn: jmvcore_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/jmvcore_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/jmvcore/jmvcore_{{ version }}.tar.gz
-  sha256: 7d86a44d806c3295afd24d45b5dbbde7d7e67c92b6c6b3ffac51a195310a2d70
+    - {{ cran_mirror }}/src/contrib/jmvcore_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/jmvcore/jmvcore_{{ version }}.tar.gz
+  sha256: 3a606c10e1d2e411bbcf02df44defcd95ae44b781957a8276d7e29bd431d1b07
 
 build:
+  merge_build_host: True  # [win]
   number: 0
   skip: true  # [win32]
   rpaths:
@@ -23,27 +23,30 @@ build:
 
 requirements:
   build:
+  host:
     - r-base
     - r-r6 >=1.0.1
     - r-base64enc
     - r-rjson
+    - r-stringi
 
   run:
     - r-base
     - r-r6 >=1.0.1
     - r-base64enc
     - r-rjson
+    - r-stringi
 
 test:
   commands:
-    - $R -e "library('jmvcore')"  # [not win]
+    - $R -e "library('jmvcore')"           # [not win]
     - "\"%R%\" -e \"library('jmvcore')\""  # [win]
 
 about:
   home: https://www.jamovi.org
   license: GPL (>= 2)
-  summary: 'A framework for creating rich interactive analyses for the jamovi platform
-    (see <https://www.jamovi.org> for more information).'
+  summary: A framework for creating rich interactive analyses for the jamovi platform (see <https://www.jamovi.org>
+    for more information).
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
   license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
