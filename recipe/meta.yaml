@@ -1,4 +1,4 @@
-{% set version = '0.9.1' %}
+{% set version = '0.9.2.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jmvcore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jmvcore/jmvcore_{{ version }}.tar.gz
-  sha256: 3a606c10e1d2e411bbcf02df44defcd95ae44b781957a8276d7e29bd431d1b07
+  sha256: bceab057e46ac5ca8709d9cd71be7ec1d52012545afc91d19b56855aa4c8556d
 
 build:
   merge_build_host: True  # [win]
@@ -23,13 +23,13 @@ build:
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-r6 >=1.0.1
     - r-base64enc
     - r-rjson
     - r-stringi
-
   run:
     - r-base
     - r-r6 >=1.0.1
