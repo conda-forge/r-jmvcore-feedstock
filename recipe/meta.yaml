@@ -14,9 +14,9 @@ source:
   sha256: c332ec460277c7dcaa1d19d3bc7e26f722eee4d0c73613d49ae3091f90f587d4
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -48,8 +48,7 @@ about:
   summary: A framework for creating rich interactive analyses for the jamovi platform (see <https://www.jamovi.org>
     for more information).
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
