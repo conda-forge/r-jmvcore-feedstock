@@ -1,4 +1,4 @@
-{% set version = "1.2.5" %}
+{% set version = "1.2.19" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jmvcore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jmvcore/jmvcore_{{ version }}.tar.gz
-  sha256: e85281a880f7e430992bf661e51b128b3c95803efc65ef3796e6d954f521719a
+  sha256: adc2fa739c69db773f490cdfe6fbffe4a321ade9cc7b13c3e8fc2aca9e218069
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -46,10 +46,9 @@ test:
 about:
   home: https://www.jamovi.org
   license: GPL (>= 2)
-  summary: A framework for creating rich interactive analyses for the jamovi platform (see <https://www.jamovi.org>
-    for more information).
+  summary: A framework for creating rich interactive analyses for the jamovi platform (see <https://www.jamovi.org> for more information).
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
