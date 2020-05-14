@@ -30,7 +30,7 @@ requirements:
     - r-rjson
     - r-rlang >=0.3.0.1
     - r-stringi
-    - r-json
+    - r-rjson
   run:
     - r-base
     - r-r6 >=1.0.1
@@ -38,7 +38,7 @@ requirements:
     - r-rjson
     - r-rlang >=0.3.0.1
     - r-stringi
-    - r-json
+    - r-rjson
 
 test:
   commands:
