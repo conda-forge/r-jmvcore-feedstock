@@ -3,7 +3,7 @@ About r-jmvcore
 
 Home: https://www.jamovi.org
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD 3-Clause
 
