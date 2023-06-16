@@ -1,11 +1,11 @@
-About r-jmvcore
-===============
+About r-jmvcore-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jmvcore-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.jamovi.org
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-jmvcore-feedstock/blob/main/LICENSE.txt)
 
 Summary: A framework for creating rich interactive analyses for the jamovi platform (see <https://www.jamovi.org> for more information).
 
