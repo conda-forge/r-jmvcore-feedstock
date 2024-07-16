@@ -1,6 +1,5 @@
 {% set version = "2.4.7" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-jmvcore
@@ -13,8 +12,7 @@ source:
   sha256: 6a5c520ea8d94fbd4863415323a5dc6566579a29d7cde4d838cec13973d9ecdf
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
