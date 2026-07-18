@@ -1,4 +1,4 @@
-{% set version = "2.7.35" %}
+{% set version = "2.7.38" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/jmvcore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/jmvcore/jmvcore_{{ version }}.tar.gz
-  sha256: 8e4770e71ebdf3f169447001979bafc78d6f15b323472f7e81047b7d2da4db3a
+  sha256: e78afd2ad6fb50eba9931432376f9a947f9123670bc8efec33ca7c663d01e7f2
 
 build:
   number: 0
